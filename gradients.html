@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            margin-top: 30px;
+            color: blue;
+        }
+        .kusu{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .kusuma{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 450px;
+            height: 300px;
+            border-radius: 25px;
+            background-color:palevioletred;
+            color: white;
+            font-size: 35px;
+            margin-top: 150px;
+        }
+        .kusuma:hover{
+            background-image: conic-gradient( at center ,lightpink  ,lightgreen,lightskyblue );
+            transform: rotate(360deg);
+            width: 500px;
+            height: 350px;
+            color:purple;
+            font-size: 40px;
+            border-radius: 20px 100px;
+            transition-duration: 0.5s;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+            border-radius: 25px;
+            font-size: 40px;
+            animation: trans 2s infinite linear normal 3s;
+            height: 300px;
+            width: 450px;
+            background-image: linear-gradient(to bottom,orange,aqua,purple);
+            color:black
+        }
+        @keyframes trans{
+            50%{ transform:rotateX('angle')}
+            100%{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Transforms & Gradients</h1></center>
+    <div class="kusu">
+    <div class="kusuma">
+        <p>Hover me!</p>
+    </div>
+    <div class="parent">
+        <p>Animation</p>
+    </div>
+    </div>
+</body>
+</html>
